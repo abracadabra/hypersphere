@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>MathBox 2 - Quaternion Hypersphere</title>
   <script src="./mathbox/mathbox-bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./mathbox/mathbox.css">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
@@ -26,11 +27,11 @@
       },
     });
 
-    mathbox.three.renderer.setClearColor(new THREE.Color(0xFFFFFF), 1.0);
+    mathbox.three.renderer.setClearColor(new THREE.Color(0x24180D), 1.0);
 
-    var red = '#DF2000';
-    var green = '#20A000';
-    var blue = '#3090FF';
+    var red = '#044C29';
+    var green = '#167F39';
+    var blue = '#45BF55';
 
     view = mathbox
       .set({
@@ -41,7 +42,7 @@
         position: [0, 0, 3],
       })
       .clock({
-        speed: .25
+        speed: .09
       })
       .stereographic4({
         bend: 1
